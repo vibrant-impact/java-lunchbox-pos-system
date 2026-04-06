@@ -12,10 +12,12 @@ public class Lunch {
         boolean running = true;
         while (running) {
             System.out.println("\n～～～ LUNCHBOX ORDER SYSTEM ～～～");
-            System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════");
-            System.out.printf("%-20s %-20s %-20s %-20s %-20s", "1. Add New Order", "2. Edit an Order", "3. Show All Orders", "4. Total Sales", "5. Exit");
+            System.out.println("════════════════════════════════════════════════════════════");
+            System.out.printf("%-20s %-20s", "1. Add New Order", "2. Edit an Order");
+            System.out.println();    
+            System.out.printf("%-20s %-20s %-20s", "3. Show All Orders", "4. Total Sales", "5. Exit");
             System.out.println();
-            System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════");
+            System.out.println("════════════════════════════════════════════════════════════");
             System.out.print("Select an option: ");
             
             if (input.hasNextInt()) {
@@ -77,9 +79,12 @@ public class Lunch {
     // Helper to handle the logic of picking an item type
     public static void handleItemSelection(Lunchbox box) {
         System.out.println("\nWhat would you like to add?");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
-        System.out.printf("%-15s %-15s %-15s %-15s\n", "1. Food ($7.99)", "2. Drink ($2.99)", "3. Snack ($1.99)", "4. Cancel");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
+        System.out.println("════════════════════════════════════════════════════════════");
+        System.out.printf("%-20s %-20s", "1. Food ($7.99)", "2. Drink ($2.99)");
+        System.out.println();
+        System.out.printf("%-20s %-20s", "3. Snack ($1.99)", "4. Cancel");
+        System.out.println();
+        System.out.println("════════════════════════════════════════════════════════════");
         System.out.print("Choice: ");
         int type = input.nextInt();
         input.nextLine(); 
@@ -100,11 +105,11 @@ public class Lunch {
 
     public static String displayFoodMenu() {
         System.out.println("\n～～～ FOOD MENU ～～～");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
-        System.out.printf("%-25s %-25s %-25s\n", "1. Pizza", "2. Taco", "3. Hot Dog");
-        System.out.printf("%-25s %-25s %-25s\n", "4. Burrito", "5. Fries", "6. Pasta");
-        System.out.printf("%-25s %-25s %-25s\n", "7. Cheeseburger", "8. Chicken Burger", "9. Caesar Salad");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
+        System.out.println("════════════════════════════════════════════════════════════");
+        System.out.printf("%-20s %-20s %-20s\n", "1. Pizza", "2. Taco", "3. Hot Dog");
+        System.out.printf("%-20s %-20s %-20s\n", "4. Burrito", "5. Fries", "6. Pasta");
+        System.out.printf("%-20s %-20s %-20s\n", "7. Cheeseburger", "8. Chicken Burger", "9. Caesar Salad");
+        System.out.println("════════════════════════════════════════════════════════════");
         System.out.print("Select (1-9): ");
         int choice = input.nextInt();
         input.nextLine();
@@ -119,11 +124,11 @@ public class Lunch {
 
     public static String displayDrinkMenu() {
         System.out.println("\n～～～ DRINK MENU ～～～");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
-        System.out.printf("%-25s %-25s %-25s\n", "1. Water", "2. Pop", "3. Juice");
-        System.out.printf("%-25s %-25s %-25s\n", "4. Tea", "5. Coffee", "6. Milk");
-        System.out.printf("%-25s %-25s %-25s\n", "7. Lemonade", "8. Iced Tea", "9. Energy Drink");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
+        System.out.println("════════════════════════════════════════════════════════════");
+        System.out.printf("%-20s %-20s %-20s\n", "1. Water", "2. Pop", "3. Juice");
+        System.out.printf("%-20s %-20s %-20s\n", "4. Tea", "5. Coffee", "6. Milk");
+        System.out.printf("%-20s %-20s %-20s\n", "7. Lemonade", "8. Iced Tea", "9. Energy Drink");
+        System.out.println("════════════════════════════════════════════════════════════");
         System.out.print("Select (1-9): ");
         int choice = input.nextInt();
         input.nextLine();
@@ -137,11 +142,11 @@ public class Lunch {
 
     public static String displaySnackMenu() {
         System.out.println("\n～～～ SNACK MENU ～～～");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
-        System.out.printf("%-25s %-25s %-25s\n", "1. Ice Cream", "2. Cookie", "3. Chips");
-        System.out.printf("%-25s %-25s %-25s\n", "4. Chocolate Bar", "5. Fruit Salad", "6. Yogurt");
-        System.out.printf("%-25s %-25s %-25s\n", "7. Granola Bar", "8. Muffin", "9. Pudding");
-        System.out.println("══════════════════════════════════════════════════════════════════════════════");
+        System.out.println("════════════════════════════════════════════════════════════");
+        System.out.printf("%-20s %-20s %-20s\n", "1. Ice Cream", "2. Cookie", "3. Chips");
+        System.out.printf("%-20s %-20s %-20s\n", "4. Chocolate Bar", "5. Fruit Salad", "6. Yogurt");
+        System.out.printf("%-20s %-20s %-20s\n", "7. Granola Bar", "8. Muffin", "9. Pudding");
+        System.out.println("════════════════════════════════════════════════════════════");
         System.out.print("Select (1-9): ");
         int choice = input.nextInt();
         input.nextLine();
