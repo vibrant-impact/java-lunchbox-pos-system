@@ -4,7 +4,7 @@
 
 ![Lunchbox Demo](POS.gif)
 
-`*Figure 1: POS System Terminal Interface*`
+*`Figure 1: POS System Terminal Interface`*
 
 ### 🌟 Project Overview
 Created as part of my Java development studies, this application simulates a professional Point of Sale (POS) system with a focus on clean UI in the console and robust Object-Oriented logic.
