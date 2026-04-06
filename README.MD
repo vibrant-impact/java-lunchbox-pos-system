@@ -2,6 +2,8 @@
 # 🍱 Lunchbox POS System
 **A Multi-Item Order Tracker & Reward Game**
 
+![Lunchbox Demo](POS.gif)
+
 ### 🌟 Project Overview
 Created as part of my Java development studies, this application simulates a professional Point of Sale (POS) system with a focus on clean UI in the console and robust Object-Oriented logic.
 
